@@ -1,0 +1,135 @@
+/* - Blue: hsl(223, 87%, 63%)
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%) */
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 50px 25px 25px;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#header-logo {
+    max-height: 15px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.emph {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+p {
+    font-weight: 300;
+    color: hsl(209, 33%, 12%);
+    font-size: 12px;
+}
+
+form {
+    margin: 30px 0;
+}
+
+input[type=email] {
+    width: 85%;
+    max-width: 350px;
+    border: 1px solid hsl(223, 100%, 88%);
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 5px 0;
+    color: hsl(209, 33%, 12%);
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsl(223, 100%, 88%);
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: hsl(223, 100%, 88%)
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: hsl(223, 100%, 88%)
+}
+
+button {
+    width: 85%;
+    max-width: 350px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(223, 87%, 63%);
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 0px 5px 5px hsla(223, 87%, 63%, 0.2);
+    margin: 5px 0;
+}
+
+#main-img {
+    width: 100%;
+    height: auto;
+    margin: 40px 0 70px;
+}
+
+.dot {
+    position: relative;
+    border: 1px solid hsl(223, 100%, 88%);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 1;
+    text-align: center;
+}
+
+.dot i {
+    color: hsl(223, 87%, 63%);
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+#copyright {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
