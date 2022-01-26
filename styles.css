@@ -3,23 +3,29 @@
 }
 
 body {
+    margin: auto;
+    padding: 80px 30px 40px;
+    overflow-x: hidden;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
     text-align: center;
-    margin: 0;
-    padding: 50px 25px 25px;
-    overflow-x: hidden;
 }
 
+/* //////////////////////////HEADER////////////////////////////// */
+
 #header-logo {
-    max-height: 15px;
-    margin: 20px 0;
+    width: 10vw;
+    min-width: 55px;
+    max-width: 90px;
+    margin: 0 0 20px;
 }
+
+/* ////////////////////////////TEXT////////////////////////////// */
 
 h2 {
     font-weight: 300;
     color: hsl(0, 0%, 59%);
-    font-size: 22px;
+    font-size: 1.3rem;
     letter-spacing: 0.5px;
 }
 
@@ -31,11 +37,13 @@ h2 {
 p {
     font-weight: 300;
     color: hsl(209, 33%, 12%);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
+/* /////////////////////////////FORM///////////////////////////// */
+
 form {
-    margin: 30px 0;
+    margin: 26px 0;
 }
 
 input[type=email] {
@@ -46,7 +54,7 @@ input[type=email] {
     border-radius: 20px;
     padding: 0 30px;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 300;
     margin: 5px 0;
     color: hsl(209, 33%, 12%);
@@ -80,48 +88,145 @@ button {
     padding: 0 30px;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 600;
-    font-size: 12px;
-    box-shadow: 0px 5px 5px hsla(223, 87%, 63%, 0.2);
+    font-size: 0.75rem;
+    box-shadow: 0px 5px 10px hsla(223, 87%, 63%, 0.25);
     margin: 5px 0;
 }
+
+/* /////////////////////////////MAIN IMG////////////////////////// */
 
 #main-img {
     width: 100%;
     height: auto;
-    margin: 40px 0 70px;
+    margin: 36px 0 40px;
 }
 
-.dot {
-    position: relative;
-    border: 1px solid hsl(223, 100%, 88%);
-    height: 30px;
+/* ////////////////////////SOCIAL MEDIA/////////////////////////// */
+
+#social-media-links {
+    padding: 60px 0px 15px;
+}
+
+#social-media-links>button {
     width: 30px;
-    border-radius: 50%;
-    display: inline-block;
-    z-index: 1;
-    text-align: center;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 1px hsl(223, 100%, 88%);
+    color: hsl(223, 87%, 63%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 0px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.1rem;
+    box-shadow: none;
+    margin: 4px;
 }
 
-.dot i {
-    color: hsl(223, 87%, 63%);
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 2;
+#social-media-links>button:hover {
+    border: solid 1px hsl(223, 100%, 88%);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(223, 87%, 63%);
 }
+
+/* //////////////////////////COPYRIGHT/////////////////////////// */
 
 #copyright {
     color: hsl(0, 0%, 59%);
     font-weight: 300;
-    font-size: 10px;
+    font-size: 0.6rem;
 }
 
+/* /////////////////////////ATTRIBUTION////////////////////////// */
+
 .attribution {
-    font-size: 11px;
+    font-size: 0.6rem;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 800px;
+    }
+
+    /* //////////////////////////HEADER////////////////////////////// */
+
+    #header-logo {
+        margin: 0 0 30px;
+    }
+
+    /* ////////////////////////////TEXT////////////////////////////// */
+
+    h2 {
+        font-size: 3rem;
+        margin: 20px 0px;
+    }
+
+    p {
+        font-size: 1.4rem;
+        margin: 20px 0px;
+    }
+
+    /* /////////////////////////////FORM///////////////////////////// */
+
+    form {
+        margin: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 800px;
+        gap: 20px;
+    }
+
+    input[type=email] {
+        width: 85%;
+        max-width: 600px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+
+    button {
+        max-width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+
+    /* /////////////////////////////MAIN IMG////////////////////////// */
+
+    #main-img {
+        width: 90%;
+        margin: 36px;
+    }
+
+    /* ////////////////////////SOCIAL MEDIA/////////////////////////// */
+
+    #social-media-links {
+        padding: 40px 0px 15px;
+    }
+
+    #social-media-links>button {
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        padding: 0px;
+        font-size: 1.3rem;
+        margin: 5px;
+    }
+
+    /* //////////////////////////COPYRIGHT/////////////////////////// */
+
+    #copyright {
+        font-size: 0.8rem;
+    }
+
+    /* /////////////////////////ATTRIBUTION////////////////////////// */
+
+    .attribution {
+        font-size: 0.8rem;
+    }
+
 }
